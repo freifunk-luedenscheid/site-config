@@ -15,6 +15,7 @@ msgstr ""
 "Willkommen zum Einrichtungsassistenten für deinen neuen Freifunk-Knoten "
 "für die Stadt Lüdenscheid."
 "Bei Fragen kannst du uns unter info@freifunk-luedenscheid.de, technik@it-swf.de oder über die 02351-67257350 erreichen!"
+"ACHTUNG! DIESE FIRMWARE ENTHÄLT SSH KEYS!"
 
 msgid "gluon-config-mode:pubkey"
 msgstr ""

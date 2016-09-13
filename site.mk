@@ -22,7 +22,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-radvd \
 	gluon-setup-mode \
 	gluon-status-page \
-    simple-tc \
+	simple-tc \
+	gluon-authorized-keys \
 	gluon-aptimeclock \
 	ffls-banner \
 	ffls-debug \
