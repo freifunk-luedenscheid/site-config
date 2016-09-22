@@ -100,7 +100,7 @@ endif
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 16.09.1-ssh
+DEFAULT_GLUON_RELEASE := 16.09.2-ssh
 
 
 ##	GLUON_RELEASE
