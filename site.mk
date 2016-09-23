@@ -22,7 +22,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-radvd \
 	gluon-setup-mode \
 	gluon-status-page \
-    simple-tc \
+	simple-tc \
 	gluon-aptimeclock \
 	ffls-banner \
 	ffls-debug \
@@ -35,8 +35,6 @@ GLUON_SITE_PACKAGES := \
 ifeq ($(GLUON_TARGET),ar71xx-generic)
 GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer \
-        gluon-txpowerfix \
-	ffls-ath9k-broken-wifi-workaround \
         gluon-forceradioenable \
 	gluon-weeklyreboot 
 endif
@@ -44,8 +42,6 @@ endif
 ifeq ($(GLUON_TARGET),ar71xx-nand)
 GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer \
-        gluon-txpowerfix \
-	ffls-ath9k-broken-wifi-workaround \
         gluon-forceradioenable \
         gluon-weeklyreboot  
 
@@ -54,8 +50,6 @@ endif
 ifeq ($(GLUON_TARGET),mpc85xx-generic)
 GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer \
-        gluon-txpowerfix \
-	ffls-ath9k-broken-wifi-workaround \
         gluon-forceradioenable \
         gluon-weeklyreboot  
 
@@ -99,7 +93,7 @@ endif
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 16.09.1
+DEFAULT_GLUON_RELEASE := 16.09.3i
 
 
 ##	GLUON_RELEASE
