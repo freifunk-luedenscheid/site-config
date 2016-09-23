@@ -36,6 +36,7 @@ ifeq ($(GLUON_TARGET),ar71xx-generic)
 GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer \
         gluon-forceradioenable \
+ 	gluon-txpowerfix \
 	gluon-weeklyreboot 
 endif
 
@@ -43,7 +44,8 @@ ifeq ($(GLUON_TARGET),ar71xx-nand)
 GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer \
         gluon-forceradioenable \
-        gluon-weeklyreboot  
+        gluon-txpowerfix \
+	gluon-weeklyreboot  
 
 endif
 
@@ -51,6 +53,7 @@ ifeq ($(GLUON_TARGET),mpc85xx-generic)
 GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer \
         gluon-forceradioenable \
+	gluon-txpowerfix \
         gluon-weeklyreboot  
 
 endif
