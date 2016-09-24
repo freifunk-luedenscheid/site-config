@@ -37,6 +37,7 @@ GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer \
         gluon-forceradioenable \
  	gluon-txpowerfix \
+	ffls-ath9k-broken-wifi-workaround \
 	gluon-weeklyreboot 
 endif
 
@@ -45,6 +46,7 @@ GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer \
         gluon-forceradioenable \
         gluon-txpowerfix \
+	ffls-ath9k-broken-wifi-workaround \
 	gluon-weeklyreboot  
 
 endif
@@ -54,6 +56,7 @@ GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer \
         gluon-forceradioenable \
 	gluon-txpowerfix \
+	ffls-ath9k-broken-wifi-workaround \
         gluon-weeklyreboot  
 
 endif
@@ -96,7 +99,7 @@ endif
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 16.09.3i
+DEFAULT_GLUON_RELEASE := 16.09.4i
 
 
 ##	GLUON_RELEASE
