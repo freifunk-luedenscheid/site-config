@@ -97,7 +97,7 @@ endif
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 16.09.5i
+DEFAULT_GLUON_RELEASE := 16.11.1
 
 
 ##	GLUON_RELEASE
