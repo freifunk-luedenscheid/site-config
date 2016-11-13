@@ -38,6 +38,7 @@ GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer \
         gluon-forceradioenable \
  	gluon-txpowerfix \
+	 gluon-quickfix \
 	gluon-weeklyreboot 
 endif
 
@@ -46,6 +47,7 @@ GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer \
         gluon-forceradioenable \
         gluon-txpowerfix \
+	gluon-quickfix \
 	gluon-weeklyreboot  
 
 endif
@@ -55,6 +57,7 @@ GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer \
         gluon-forceradioenable \
 	gluon-txpowerfix \
+	gluon-quickfix \
         gluon-weeklyreboot  
 
 endif
@@ -97,7 +100,7 @@ endif
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 16.11.1
+DEFAULT_GLUON_RELEASE := 16.11.2
 
 
 ##	GLUON_RELEASE
