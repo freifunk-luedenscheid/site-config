@@ -39,7 +39,7 @@ GLUON_SITE_PACKAGES += \
         gluon-forceradioenable \
  	gluon-txpowerfix \
 	gluon-quickfix \
-	respondd-module-airtime \
+#	respondd-module-airtime \
 	gluon-weeklyreboot 
 endif
 
@@ -49,7 +49,7 @@ GLUON_SITE_PACKAGES += \
         gluon-forceradioenable \
         gluon-txpowerfix \
 	gluon-quickfix \
-	respondd-module-airtime \
+#	respondd-module-airtime \
 	gluon-weeklyreboot  
 
 endif
@@ -60,7 +60,7 @@ GLUON_SITE_PACKAGES += \
         gluon-forceradioenable \
 	gluon-txpowerfix \
 	gluon-quickfix \
-	respondd-module-airtime \
+#	respondd-module-airtime \
         gluon-weeklyreboot  
 
 endif
