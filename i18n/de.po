@@ -22,7 +22,7 @@ msgstr ""
 msgid "gluon-config-mode:pubkey"
 msgstr ""
 "<p>Bitte stecke nun das Netzwerkkabel vom (meist gelben) LAN Port in den (meist blauen) WAN Port deines Routers.</p>"
-"Knotenname: (<em><%=hostname%></em>) und MAC-Adresse: (<em><%=sysconfig.primary_mac%></em>)"
+"Knotenname: (<em><%=escape(hostname)%></em>) und MAC-Adresse: (<em><%=sysconfig.primary_mac%></em>)"
 "<p>Dein öffentlicher Schlüssel: <em><%=pubkey%></em></p>"
 
 msgid "gluon-config-mode:reboot"
