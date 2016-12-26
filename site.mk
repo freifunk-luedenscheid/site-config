@@ -24,6 +24,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	simple-tc \
 	gluon-aptimeclock \
+	gluon-authorized-keys \
 	ffls-banner \
 	ffls-debug \
 	ffls-respondd-watchdog \
@@ -234,7 +235,7 @@ GLUON_WZRHPAG300H_SITE_PACKAGES := $(USB_PACKAGES_BASIC) $(TOOLS_PACKAGES) $(USB
 GLUON_TLWDR4900_SITE_PACKAGES := $(USB_PACKAGES_BASIC) $(TOOLS_PACKAGES) $(USB_PACKAGES_STORAGE)
 
 
-DEFAULT_GLUON_RELEASE := 16.12.5i-ssh
+DEFAULT_GLUON_RELEASE := 16.12.6i-ssh
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
