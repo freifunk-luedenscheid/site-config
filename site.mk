@@ -62,41 +62,6 @@ GLUON_SITE_PACKAGES += \
 
 endif
 
-# add addition network drivers and usb stuff only to targes where disk space does not matter.
-#ifeq ($(GLUON_TARGET),x86-generic)
-#GLUON_SITE_PACKAGES += \
-#        kmod-usb-core \
-#        kmod-usb2 \
-#        kmod-usb-hid \
-#        kmod-usb-net \
-#        kmod-usb-net-asix \
-#        kmod-usb-net-dm9601-ether \
-#        kmod-sky2 \
-#        kmod-r8169 \
-#        kmod-forcedeth \
-#        kmod-8139too \
-#	kmod-atl2
-#endif
-
-
-
-#ifeq ($(GLUON_TARGET),x86-64)
-#GLUON_SITE_PACKAGES += \
-#        kmod-usb-core \
-#        kmod-usb2 \
-#        kmod-usb-hid \
-#        kmod-usb-net \
-#        kmod-usb-net-asix \
-#        kmod-usb-net-dm9601-ether \
-#        kmod-sky2 \
-#        kmod-r8169 \
-#        kmod-forcedeth \
-#        kmod-8139too \
-#	kmod-atl2
-#endif
-
-
-#---------------------------------------
 # basic support for USB stack
 USB_PACKAGES_BASIC := \
 	kmod-usb-core \
@@ -246,43 +211,6 @@ GLUON_LANGS ?= de
 
 GLUON_REGION := eu
 
-
-#---------------------------------------
-
-
-
-
-
-
-
-##	DEFAULT_GLUON_RELEASE
-#		version string to use for images
-#		gluon relies on
-#			opkg compare-versions "$1" '>>' "$2"
-#		to decide if a version is newer or not.
-
-#DEFAULT_GLUON_RELEASE := 16.12.4i
-
-
-##	GLUON_RELEASE
-#		call make with custom GLUON_RELEASE flag, to use your own release version scheme.
-#		e.g.:
-#			$ make images GLUON_RELEASE=23.42+5
-#		would generate images named like this:
-#			gluon-ff%site_code%-23.42+5-%router_model%.bin
-
-# Allow overriding the release number from the command line
-#GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
-
-# Default priority for updates.
-#GLUON_PRIORITY ?= 0
-
-# Languages to include
-#GLUON_LANGS ?= de
-
-#GLUON_REGION := eu
-
-# if set autoupdater is active while make GLUON_BRANCH=stable
 GLUON_BRANCH ?= stable
 export GLUON_BRANCH
 
