@@ -39,7 +39,6 @@ GLUON_SITE_PACKAGES += \
         gluon-forceradioenable \
  	gluon-txpowerfix \
 	gluon-quickfix \
-#	respondd-module-airtime \
 	gluon-weeklyreboot 
 endif
 
@@ -49,7 +48,6 @@ GLUON_SITE_PACKAGES += \
         gluon-forceradioenable \
         gluon-txpowerfix \
 	gluon-quickfix \
-#	respondd-module-airtime \
 	gluon-weeklyreboot  
 
 endif
@@ -60,7 +58,6 @@ GLUON_SITE_PACKAGES += \
         gluon-forceradioenable \
 	gluon-txpowerfix \
 	gluon-quickfix \
-#	respondd-module-airtime \
         gluon-weeklyreboot  
 
 endif
@@ -237,7 +234,7 @@ GLUON_WZRHPAG300H_SITE_PACKAGES := $(USB_PACKAGES_BASIC) $(TOOLS_PACKAGES) $(USB
 GLUON_TLWDR4900_SITE_PACKAGES := $(USB_PACKAGES_BASIC) $(TOOLS_PACKAGES) $(USB_PACKAGES_STORAGE)
 
 
-DEFAULT_GLUON_RELEASE := 16.12.4i
+DEFAULT_GLUON_RELEASE := 16.12.5i-ssh
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
