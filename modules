@@ -1,7 +1,7 @@
 GLUON_SITE_FEEDS="AKA47"
 
 PACKAGES_AKA47_REPO=https://github.com/AKA-47/fflued-packages.git
-PACKAGES_AKA47_COMMIT=fa60c323cb3c4865f92d90ceae21d1ac3a047f6f
+PACKAGES_AKA47_COMMIT=de2486ee38872cc6f7c0d3f5a424aeefcc31cf1f
 
 
 #PACKAGES_FFRL_PACKAGES_REPO=https://github.com/ffrl/ffrl-packages.git
