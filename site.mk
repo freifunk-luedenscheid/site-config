@@ -25,7 +25,7 @@ GLUON_FEATURES := \
 #		selection that would be enabled by default or due to the
 #		chosen feature flags
 
-GLUON_SITE_PACKAGES := haveged gluon-luci-node-role
+GLUON_SITE_PACKAGES := haveged gluon-web-node-role
 
 ifeq ($(GLUON_TARGET),ar71xx-generic)
 GLUON_SITE_PACKAGES += \
@@ -39,7 +39,7 @@ GLUON_SITE_PACKAGES += \
     ls-gluon-ssid-changer \
 	respondd-module-airtime \
     ffls-ath9k-broken-wifi-workaround \
-    gluon-luci-node-role \
+    gluon-web-node-role \
     gluon-web-private-wifi
 endif
 
@@ -55,7 +55,7 @@ GLUON_SITE_PACKAGES += \
     ls-gluon-ssid-changer \
 	respondd-module-airtime \
     ffls-ath9k-broken-wifi-workaround \
-    gluon-luci-node-role \
+    gluon-web-node-role \
     gluon-web-private-wifi
 endif
 
@@ -71,7 +71,7 @@ GLUON_SITE_PACKAGES += \
     ls-gluon-ssid-changer \
 	respondd-module-airtime \
     ffls-ath9k-broken-wifi-workaround \
-    gluon-luci-node-role \
+    gluon-web-node-role \
     gluon-web-private-wifi
 endif
 
@@ -79,7 +79,7 @@ ifeq ($(GLUON_TARGET), brcm2708-bcm2708)
 GLUON_SITE_PACKAGES += \
     haveged \
 	simple-tc \
-    gluon-luci-node-role \
+    gluon-web-node-role \
     ffls-banner 
 endif
 
@@ -87,7 +87,7 @@ ifeq ($(GLUON_TARGET),  brcm2708-bcm2709)
 GLUON_SITE_PACKAGES += \
     haveged \
 	simple-tc \
-    gluon-luci-node-role \
+    gluon-web-node-role \
     ffls-banner 
 endif
 
@@ -95,7 +95,7 @@ ifeq ($(GLUON_TARGET),  brcm2708-bcm2710)
 GLUON_SITE_PACKAGES += \
     haveged \
 	simple-tc \
-    gluon-luci-node-role \
+    gluon-web-node-role \
     ffls-banner 
 endif
 
@@ -103,7 +103,7 @@ ifeq ($(GLUON_TARGET),  x86-generic)
 GLUON_SITE_PACKAGES += \
     haveged \
 	simple-tc \
-    gluon-luci-node-role \
+    gluon-web-node-role \
     ffls-banner 
 endif
 
