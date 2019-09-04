@@ -1,4 +1,4 @@
 GLUON_SITE_FEEDS="AKA47"
 
 PACKAGES_AKA47_REPO=https://github.com/freifunk-luedenscheid/ffls-packages.git
-PACKAGES_AKA47_COMMIT=a7cc3434cc33c3c7febb91635a840a8f5aea882d
+PACKAGES_AKA47_COMMIT=b9c986e4c1d2316e46ecc50f30b4c4f46b3386da
