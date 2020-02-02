@@ -147,4 +147,5 @@ GLUON_LANGS ?= de
 GLUON_BRANCH ?= stable
 export GLUON_BRANCH
 
-
+# Do not build images for deprecated devices
+GLUON_DEPRECATED ?= 0
