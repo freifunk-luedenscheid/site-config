@@ -85,3 +85,4 @@ msgstr ""
 msgid "gluon-config-mode:contact-note"
 msgstr ""
 "Emailadresse, Handynummer / eine gültige Kontaktmöglichkeit"
+
