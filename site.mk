@@ -10,14 +10,17 @@ GLUON_FEATURES := \
 	ebtables-filter-multicast \
 	ebtables-filter-ra-dhcp \
 	ebtables-limit-arp \
-    web-logging \
 	mesh-batman-adv-15 \
 	mesh-vpn-fastd \
-	radvd \
 	respondd \
 	status-page \
 	web-advanced \
-	web-wizard
+	web-wizard \
+    web-logging
+
+
+
+
 
 ##	GLUON_SITE_PACKAGES
 #		Specify additional Gluon/OpenWrt packages to include here;
@@ -25,96 +28,7 @@ GLUON_FEATURES := \
 #		selection that would be enabled by default or due to the
 #		chosen feature flags
 
-GLUON_SITE_PACKAGES := haveged gluon-web-node-role
-
-ifeq ($(GLUON_TARGET),ar71xx-generic)
-GLUON_SITE_PACKAGES += \
-    haveged \
-    iwinfo \
-    gluon-aptimeclock \
-	simple-tc \
-    ffls-banner \
-    gluon-forceradioenable	\
-    gluon-weeklyreboot \
-    ls-gluon-ssid-changer \
-	respondd-module-airtime \
-    ffls-ath9k-broken-wifi-workaround \
-    gluon-web-node-role \
-    gluon-web-private-wifi
-endif
-
-ifeq ($(GLUON_TARGET),ar71xx-nand)
-GLUON_SITE_PACKAGES += \
-    haveged \
-    iwinfo \
-    gluon-aptimeclock \
-	simple-tc \
-    ffls-banner \
-    gluon-forceradioenable	\
-    gluon-weeklyreboot \
-    ls-gluon-ssid-changer \
-	respondd-module-airtime \
-    ffls-ath9k-broken-wifi-workaround \
-    gluon-web-node-role \
-    gluon-web-private-wifi
-endif
-
-ifeq ($(GLUON_TARGET),ar71xx-tiny)
-GLUON_SITE_PACKAGES += \
-    haveged \
-    iwinfo \
-    gluon-aptimeclock \
-	simple-tc \
-    ffls-banner \
-    gluon-forceradioenable	\
-    gluon-weeklyreboot \
-    ls-gluon-ssid-changer \
-	respondd-module-airtime \
-    ffls-ath9k-broken-wifi-workaround \
-    gluon-web-node-role \
-    gluon-web-private-wifi
-endif
-
-ifeq ($(GLUON_TARGET), brcm2708-bcm2708)
-GLUON_SITE_PACKAGES += \
-    haveged \
-	simple-tc \
-    gluon-web-node-role \
-    ffls-banner 
-endif
-
-ifeq ($(GLUON_TARGET),  brcm2708-bcm2709)
-GLUON_SITE_PACKAGES += \
-    haveged \
-	simple-tc \
-    gluon-web-node-role \
-    ffls-banner 
-endif
-
-ifeq ($(GLUON_TARGET),  brcm2708-bcm2710)
-GLUON_SITE_PACKAGES += \
-    haveged \
-	simple-tc \
-    gluon-web-node-role \
-    ffls-banner 
-endif
-
-ifeq ($(GLUON_TARGET),  x86-generic)
-GLUON_SITE_PACKAGES += \
-    haveged \
-	simple-tc \
-    gluon-web-node-role \
-    ffls-banner 
-endif
-
-
-
-
-
-
-
-#X86
-#GLUON_SITE_PACKAGES := haveged ffls-banner
+GLUON_SITE_PACKAGES := haveged iwinfo gluon-web-node-role gluon-aptimeclock simple-tc gluon-forceradioenable gluon-weeklyreboot ls-gluon-ssid-changer ffls-ath9k-broken-wifi-workaround respondd-module-airtime gluon-web-private-wifi
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
@@ -122,7 +36,14 @@ endif
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 19.08.6i
+#DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
+
+RELEASE_VERSION := 1i
+GLUON_BRANCH ?= stable
+DEFAULT_GLUON_RELEASE := $(shell date '+%y.%m').$(RELEASE_VERSION)-$(GLUON_BRANCH)
+
+
+export GLUON_BRANCH
 
 # Variables set with ?= can be overwritten from the command line
 
@@ -144,7 +65,8 @@ GLUON_REGION ?= eu
 # Languages to include
 GLUON_LANGS ?= de
 
-GLUON_BRANCH ?= stable
-export GLUON_BRANCH
+# Do not build images for deprecated devices
+GLUON_DEPRECATED ?= 1
+
 
 
